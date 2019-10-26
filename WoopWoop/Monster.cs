@@ -6,11 +6,16 @@ namespace WoopWoop
 {
     abstract class Monster
     {
+        public abstract IVS IVs                 { get; protected set; }
         public abstract EntityTypes EntityTypes { get; }
-        public abstract IVS IVs                 { get; }
-        public virtual string CustomName        { get; }
+		public virtual string CustomName        { get; }
         public virtual byte Level               { get; }
         public virtual float XP                 { get; }
+
+		public void LevelUp()
+		{
+			IVs = IVS.LevelUp(IVs);
+		}
 
         public override bool Equals(object obj)
         {

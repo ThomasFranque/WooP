@@ -8,14 +8,14 @@ namespace WoopWoop.Mons
     {
         public override EntityTypes EntityTypes { get; }
 
-        public override IVS IVs { get; }
+        public override IVS IVs { get; protected set; }
 
         public Squirtle()
         {
             EntityTypes = 
                 new EntityTypes(Typings.Water, Typings.None);
 
-            IVs = new IVS();
+            IVs = new IVS(1);
         }
     }
 }

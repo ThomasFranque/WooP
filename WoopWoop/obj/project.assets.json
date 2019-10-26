@@ -8,19 +8,23 @@
     ".NETCoreApp,Version=v3.0": []
   },
   "packageFolders": {
-    "C:\\Users\\aulas\\.nuget\\packages\\": {}
+    "C:\\Users\\tfran\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aulas\\source\\repos\\WoopWoop\\WoopWoop\\WoopWoop.csproj",
+      "projectUniqueName": "D:\\My Stuff\\Console stuff\\WooP\\WoopWoop\\WoopWoop.csproj",
       "projectName": "WoopWoop",
-      "projectPath": "C:\\Users\\aulas\\source\\repos\\WoopWoop\\WoopWoop\\WoopWoop.csproj",
-      "packagesPath": "C:\\Users\\aulas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aulas\\source\\repos\\WoopWoop\\WoopWoop\\obj\\",
+      "projectPath": "D:\\My Stuff\\Console stuff\\WooP\\WoopWoop\\WoopWoop.csproj",
+      "packagesPath": "C:\\Users\\tfran\\.nuget\\packages\\",
+      "outputPath": "D:\\My Stuff\\Console stuff\\WooP\\WoopWoop\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\aulas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\tfran\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
