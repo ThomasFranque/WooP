@@ -10,7 +10,7 @@ namespace WoopWoop.Mons
 
         public override IVS IVs { get; protected set; }
 
-        public Squirtle()
+        public Squirtle(string name) : base(name)
         {
             EntityTypes = 
                 new EntityTypes(Typings.Water, Typings.None);

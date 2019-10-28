@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\My Stuff\\Console stuff\\WooP\\WoopWoop\\WoopWoop.csproj": {}
+    "C:\\Users\\a21803301\\Desktop\\WooP-master\\WoopWoop\\WoopWoop.csproj": {}
   },
   "projects": {
-    "D:\\My Stuff\\Console stuff\\WooP\\WoopWoop\\WoopWoop.csproj": {
+    "C:\\Users\\a21803301\\Desktop\\WooP-master\\WoopWoop\\WoopWoop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\My Stuff\\Console stuff\\WooP\\WoopWoop\\WoopWoop.csproj",
+        "projectUniqueName": "C:\\Users\\a21803301\\Desktop\\WooP-master\\WoopWoop\\WoopWoop.csproj",
         "projectName": "WoopWoop",
-        "projectPath": "D:\\My Stuff\\Console stuff\\WooP\\WoopWoop\\WoopWoop.csproj",
-        "packagesPath": "C:\\Users\\tfran\\.nuget\\packages\\",
-        "outputPath": "D:\\My Stuff\\Console stuff\\WooP\\WoopWoop\\obj\\",
+        "projectPath": "C:\\Users\\a21803301\\Desktop\\WooP-master\\WoopWoop\\WoopWoop.csproj",
+        "packagesPath": "C:\\Users\\a21803301\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\a21803301\\Desktop\\WooP-master\\WoopWoop\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\tfran\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\a21803301\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

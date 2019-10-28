@@ -15,8 +15,8 @@ namespace WoopWoop
 		{
 			Battle battle;
 
-			Monster t1 = new Mons.Squirtle();
-			Monster t2 = new Mons.Squirtle();
+			Monster t1 = new Mons.Squirtle("Squirtle 1");
+			Monster t2 = new Mons.Squirtle("Squirtle 2");
 
 			battle = new Battle(t1, t2);
 

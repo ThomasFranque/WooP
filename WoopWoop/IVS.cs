@@ -27,6 +27,9 @@ namespace WoopWoop
         private int _specialDefense;
         public int SpecialDefense => _specialDefense;
 
+        private int _speed;
+        public int Speed => _speed;
+
         public IVS(byte lvl)
         {
 			Random rand = new Random();
@@ -44,9 +47,12 @@ namespace WoopWoop
             _defense =			rand.Next(minStatNum, maxStatNum);
 
             _specialDefense =	rand.Next(minStatNum, maxStatNum);
+
+            _speed          =   rand.Next(minStatNum, maxStatNum);
         }
 
-		public IVS(int hp, int atk, int spAtk, int def, int spDef)
+		public IVS
+            (int hp, int atk, int spAtk, int def, int spDef, int speed)
 		{
 			_hp = hp;
 
@@ -57,7 +63,9 @@ namespace WoopWoop
 			_defense = def;
 
 			_specialDefense = spDef;
-		}
+
+            _speed = speed;
+        }
 
 		public static IVS LevelUp(IVS ivsToLvl)
 		{
@@ -68,6 +76,7 @@ namespace WoopWoop
 			int spAtk	= 0;
 			int def		= 0;
 			int spDef	= 0;
+            int speed   = 0;
 
 			hp =
 				ivsToLvl.HP + rand.Next(MIN_STAT_GAIN, MAX_STAT_GAIN) +
@@ -80,8 +89,17 @@ namespace WoopWoop
 				ivsToLvl.Defense + rand.Next(MIN_STAT_GAIN, MAX_STAT_GAIN);
 			spDef = 
 				ivsToLvl.SpecialDefense + rand.Next(MIN_STAT_GAIN, MAX_STAT_GAIN);
+            speed = 
+				ivsToLvl.Speed + rand.Next(MIN_STAT_GAIN, MAX_STAT_GAIN);
 
-			return new IVS(hp, atk, spAtk, def, spDef);
+            if (hp >= 300) hp = 300;
+            if (atk >= 300) atk = 300;
+            if (spAtk >= 300) spAtk = 300;
+            if (def >= 300) def = 300;
+            if (spDef >= 300) spDef = 300;
+            if (speed >= 300) speed = 300;
+
+			return new IVS(hp, atk, spAtk, def, spDef, speed);
 		}
 
 		public override string ToString() =>
@@ -89,6 +107,7 @@ namespace WoopWoop
 			$"Attack ..... {Attack}\n" +
 			$"SpAttack ... {SpecialAttack}\n" +
 			$"Defense .... {Defense}\n" +
-			$"SpDefense .. {SpecialDefense}";
+			$"SpDefense .. {SpecialDefense}" +
+            $"Speed ...... {Speed}";
 	}
 }

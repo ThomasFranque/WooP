@@ -12,6 +12,11 @@ namespace WoopWoop
         public virtual byte Level               { get; }
         public virtual float XP                 { get; }
 
+        public Monster(string customName)
+        {
+            CustomName = customName;
+        }
+
 		public void LevelUp()
 		{
 			IVs = IVS.LevelUp(IVs);
